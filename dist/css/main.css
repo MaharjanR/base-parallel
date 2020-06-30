@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ce9797;
+  background: linear-gradient(135deg, white, #fff5f5); }
+
+.container {
+  margin: auto;
+  padding: 1rem;
+  max-width: 375px; }
+
+main header .logo {
+  width: 25%; }
+
+main .hero-img {
+  height: 300px;
+  background: url("../images/hero-mobile.jpg") no-repeat top/cover; }
+
+main section.hero-description {
+  text-align: center; }
+  main section.hero-description h1 {
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
+    margin: 1rem 0;
+    padding: 1rem; }
+    main section.hero-description h1 span {
+      color: #413a3a;
+      font-weight: 600;
+      display: block; }
+  main section.hero-description p {
+    margin-bottom: 1rem; }
+  main section.hero-description form {
+    display: flex;
+    border: 1px solid;
+    border-radius: 2rem;
+    color: #ce9797; }
+    main section.hero-description form input,
+    main section.hero-description form button {
+      border: none;
+      height: 2rem;
+      padding: 0 1rem;
+      margin: 0 1rem; }
+    main section.hero-description form input:focus {
+      outline: none; }
+    main section.hero-description form input::placeholder {
+      color: #ce9797; }
+    main section.hero-description form input[type="text"] {
+      color: #ce9797;
+      background: #fff5f5;
+      flex-grow: 2; }
+    main section.hero-description form button {
+      background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+      border-radius: 2rem;
+      margin: 0; }
+
+.attribution {
+  padding: 1rem 0;
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
