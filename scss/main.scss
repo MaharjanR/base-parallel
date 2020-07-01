@@ -13,8 +13,6 @@ body {
   line-height: 1.6;
   color: $red;
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  //   background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
-  // url("../images/bg-pattern-desktop.svg") no-repeat center;
 }
 
 .container {
@@ -60,6 +58,17 @@ main {
       border-radius: 2rem;
       color: $red;
 
+      img.icon-error {
+        display: none;
+        height: 25%;
+        align-self: center;
+        margin: 0 1rem;
+      }
+
+      img.show-error {
+        display: block;
+      }
+
       input,
       button {
         border: none;
@@ -88,6 +97,11 @@ main {
         margin: 0;
       }
     }
+
+    form.error {
+      border: 2px solid;
+      border-color: $soft-red;
+    }
   }
 }
 
@@ -98,4 +112,40 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  body {
+    background: url("../images/bg-pattern-desktop.svg") no-repeat center/cover;
+  }
+
+  main {
+    height: 98vh;
+    display: grid;
+    grid-template-areas:
+      "header img"
+      "description img";
+    grid-template-columns: repeat(2, 1fr);
+
+    header .logo {
+      width: 50%;
+      margin-top: 3rem;
+      grid-area: header;
+    }
+
+    .hero-img {
+      background: url("../images/hero-desktop.jpg") no-repeat top/cover;
+      height: 100%;
+      grid-area: img;
+    }
+
+    section.hero-description {
+      text-align: start;
+      grid-area: description;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
 }
