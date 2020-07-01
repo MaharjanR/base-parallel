@@ -68,9 +68,18 @@ main section.hero-description {
       background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
       border-radius: 2rem;
       margin: 0; }
+    main section.hero-description form button:focus {
+      outline: none; }
   main section.hero-description form.error {
     border: 2px solid;
     border-color: #f96262; }
+  main section.hero-description p.added-email {
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    color: #ce9797; }
+  main section.hero-description p.success {
+    opacity: 1; }
 
 .attribution {
   padding: 1rem 0;

@@ -96,11 +96,26 @@ main {
         border-radius: 2rem;
         margin: 0;
       }
+
+      button:focus {
+        outline: none;
+      }
     }
 
     form.error {
       border: 2px solid;
       border-color: $soft-red;
+    }
+
+    p.added-email {
+      margin-top: 1rem;
+      opacity: 0;
+      transition: opacity 1s ease-in;
+      color: $red;
+    }
+
+    p.success {
+      opacity: 1;
     }
   }
 }
